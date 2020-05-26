@@ -1,5 +1,5 @@
 
-<div id="configbox">
+<div id="configbox" class="p-3">
 
 	<form name="procForm" action="<?php echo $g['s']?>/" method="post" target="_action_frame_<?php echo $m?>" onsubmit="return saveCheck(this);">
 	<input type="hidden" name="r" value="<?php echo $r?>" />
