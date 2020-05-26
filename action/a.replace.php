@@ -6,9 +6,9 @@ checkAdmin(0);
 if ($from_str && $to_str)
 {
 	$db_where = '_';
-		if ($where_blog == '1')
+		if ($where_post == '1')
 	{
-		db_query("update ".$table['blogdata']." set content=REPLACE(content,'".$from_str."','".$to_str."')",$DB_CONNECT);
+		db_query("update ".$table['postdata']." set content=REPLACE(content,'".$from_str."','".$to_str."')",$DB_CONNECT);
 		$db_where .= 'b';
 	}
 	if ($where_bbs == '1')
@@ -31,7 +31,7 @@ if ($from_str && $to_str)
 	{
 		db_query("update ".$table_name." set ".$field_name."=REPLACE(".$field_name.",'".$from_str."','".$to_str."')",$DB_CONNECT);
 	}
-	
+
 	$_SESSION['db_where'] = $db_where;
 	$_SESSION['db_from_str'] = $from_str;
 	$_SESSION['db_to_str'] = $to_str;

@@ -1,3 +1,3 @@
 <?php
-$d['amenu']['main'] = 'DB 문자치환';
+$d['amenu']['main'] = '문자치환';
 ?>
