@@ -66,7 +66,7 @@
 			</div>
 			<div class="col">
 				<h5 class="mb-3">바꿀주소</h5>
-				<input type="text" name="to_str" size="60" value="<?php echo $_SESSION['db_to_str']?$_SESSION['db_to_str']:$g['url_root']?>" class="form-control">
+				<input type="text" name="to_str" size="60" value="<?php echo $_SESSION['db_to_str']?>" class="form-control">
 			</div>
 		</div>
 

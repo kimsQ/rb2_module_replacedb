@@ -9,7 +9,7 @@ if ($from_str && $to_str)
 		if ($where_post == '1')
 	{
 		db_query("update ".$table['postdata']." set content=REPLACE(content,'".$from_str."','".$to_str."')",$DB_CONNECT);
-		$db_where .= 'b';
+		$db_where .= 'p';
 	}
 	if ($where_bbs == '1')
 	{
